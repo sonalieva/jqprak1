@@ -1,0 +1,40 @@
+$(document).ready(function(){
+    $("#hide").click(function(){
+      $("p").hide();
+    });
+    $("#show").click(function(){
+      $("p").show();
+    });
+  });
+  $(document).ready(function(){
+    $("button").click(function(){
+      $("#div1").fadeIn();
+      $("#div2").fadeIn("slow");
+      $("#div3").fadeIn(3000);
+    });
+  });
+$(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideDown("slow");
+    });
+  });
+$(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideDown(5000);
+    });
+    $("#stop").click(function(){
+      $("#panel").stop();
+    });
+  });
+$(document).ready(function(){
+    $("button").click(function(){
+      $("p").hide("slow", function(){
+        alert("The paragraph is now hidden");
+      });
+    });
+  });
+$(document).ready(function(){
+    $("button").click(function(){
+      alert($("#w3s").attr("href"));
+    });
+  });
